@@ -1,6 +1,6 @@
 <template>
     <div class="backdrop">
-        <div class="modal" :class="{ theme: theme === 'theme'}">
+        <div class="modal" :class="{ custom:theme === 'custom' }">
             <h1>{{ header }}</h1>
             <p>{{ text }}</p>
         </div>

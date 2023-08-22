@@ -36,11 +36,11 @@ export default{
     .modal p{
         font-style: normal;
     }
-    .modal.theme {
+    .modal.custom {
         background: bisque;
         color: blueviolet;
     }
-    .modal.theme h1{
+    .modal.custom h1{
         color: purple;
     }
 </style>

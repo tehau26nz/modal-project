@@ -1,15 +1,15 @@
 <template>
     <div class="backdrop">
-        <div class="modal">
-            <h1>{{header}}</h1>
-            <p>My content</p>
+        <div class="modal" :class="{ theme: theme === 'theme'}">
+            <h1>{{ header }}</h1>
+            <p>{{ text }}</p>
         </div>
     </div>
 </template>
 
 <script>
 export default{
-    props: ['header']
+    props: ['header', 'text', 'theme']
 }
 </script>
 
@@ -35,5 +35,12 @@ export default{
     }
     .modal p{
         font-style: normal;
+    }
+    .modal.theme {
+        background: bisque;
+        color: blueviolet;
+    }
+    .modal.theme h1{
+        color: purple;
     }
 </style>

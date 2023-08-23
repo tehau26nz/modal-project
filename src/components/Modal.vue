@@ -43,11 +43,11 @@ export default{
     .modal p{
         font-style: normal;
     }
-    .modal.actions{
+    .modal .actions{
         text-align: center;
         margin: 30px 0 10px 0;
     }
-    .modal.actions a{
+    .modal .actions a{
         color: #333;
         padding: 8px;
         border: 1px solid #eee;

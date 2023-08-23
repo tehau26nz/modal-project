@@ -2,7 +2,7 @@
   <h1>{{title}}</h1>
   <p>Kia ora ...</p>
   <div v-if="showModal">
-    <Modal :header="header" :text="text" theme="custom"/>
+    <Modal :header="header" :text="text" theme="custom" @close="toggleModal"/>
   </div>
   <button @click="toggleModal">
     Open modal
@@ -17,9 +17,9 @@ export default {
   components: {Modal},
   data(){
     return{
-      title: 'My First Vue App:)',
-      header: 'Sign up for my newsletter',
-      text: 'It is cool, it is awesome!',
+      title: 'Welcome to Test',
+      header: 'Sign up for Te Reo Maori',
+      text: 'Ka pai!',
       // New property
       showModal: false
     }

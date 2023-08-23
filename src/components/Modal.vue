@@ -50,7 +50,7 @@ export default{
     .modal .actions a{
         color: #333;
         padding: 8px;
-        border: 1px solid blueviolet;
+        border: 1px solid purple;
         border-radius: 4px;
         text-decoration: none;
         margin: 10px;

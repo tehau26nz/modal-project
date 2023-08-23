@@ -3,8 +3,13 @@
   <p>Kia ora ...</p>
   <div v-if="showModal">
     <Modal theme="custom" @close="toggleModal">
+      <template v-slot:links>
+        <a href="#">Enrol now</a><br>
+        <a href="#">More details</a>
+      </template>
       <h1>Kei te pehea koe?</h1>
       <p>Kei te pai au. Kei te aha koe?</p>
+
     </Modal>
   </div>
   <button @click.alt="toggleModal">

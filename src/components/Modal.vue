@@ -43,11 +43,11 @@ export default{
     .modal p{
         font-style: normal;
     }
-    .modal .actions{
+    .modal.actions{
         text-align: center;
         margin: 30px 0 10px 0;
     }
-    .modal .actions a{
+    .modal.actions a{
         color: #333;
         padding: 8px;
         border: 1px solid #eee;
@@ -55,17 +55,17 @@ export default{
         text-decoration: none;
         margin: 10px;
     }
-    .modal .custom {
+    .modal.custom {
         background: bisque;
         color: blueviolet;
     }
-    .modal .custom h1{
+    .modal.custom h1{
         color: purple;
     }
-    .modal .custom .actions{
+    .modal.custom .actions{
         color: blueviolet;
     }
-    .modal .custom .actions a{
+    .modal.custom .actions a{
         color: purple;
     }
 </style>

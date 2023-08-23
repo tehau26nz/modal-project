@@ -14,6 +14,8 @@ npm run serve
 ```
 npm run build
 ```
+### Link for demo
+https://modal-project-kappa.vercel.app/
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

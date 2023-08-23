@@ -2,7 +2,10 @@
   <h1>{{title}}</h1>
   <p>Kia ora ...</p>
   <div v-if="showModal">
-    <Modal :header="header" :text="text" theme="custom" @close="toggleModal"/>
+    <Modal theme="custom" @close="toggleModal">
+      <h1>Kei te pehea koe?</h1>
+      <p>Kei te pai au. Kei te aha koe?</p>
+    </Modal>
   </div>
   <button @click.alt="toggleModal">
     Open modal (Alt)
@@ -17,7 +20,7 @@ export default {
   components: {Modal},
   data(){
     return{
-      title: 'Welcome to Test',
+      title: 'Tena koutou',
       header: 'Sign up for Te Reo Maori',
       text: 'Ka pai!',
       // New property

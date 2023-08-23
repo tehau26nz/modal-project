@@ -1,7 +1,7 @@
 <template>
     <div class="backdrop" @click.self="closeModal">
         <div class="modal" :class="{ custom:theme === 'custom' }">
-            <slot></slot>
+            <slot>Default content</slot>
             <div class="actions">
                 <slot name="links"></slot>
             </div>
@@ -50,7 +50,7 @@ export default{
     .modal .actions a{
         color: #333;
         padding: 8px;
-        border: 1px solid #eee;
+        border: 1px solid blueviolet;
         border-radius: 4px;
         text-decoration: none;
         margin: 10px;

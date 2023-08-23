@@ -4,7 +4,7 @@
   <div v-if="showModal">
     <Modal theme="custom" @close="toggleModal">
       <template v-slot:links>
-        <a href="#">Enrol now</a><br>
+        <a href="#">Enrol now</a>
         <a href="#">More details</a>
       </template>
       <h1>Kei te pehea koe?</h1>

@@ -12,15 +12,9 @@
       <p>Kei te pai au. Kei te aha koe?</p>
 
     </Modal>
-    <Modal theme="project" @close="toggleModalTwo">
-
-    </Modal>
   </div>
   <button @click.alt="toggleModal">
     Open modal (Alt)
-  </button>
-  <button @click="toggleModalTwo">
-    Open new modal
   </button>
 </template>
 

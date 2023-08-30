@@ -3,6 +3,7 @@
   <p>Kia ora ...</p>
   <div v-if="showModal">
     <Modal theme="custom" @close="toggleModal">
+      
       <template v-slot:links>
         <a href="#">Enrol now</a>
         <a href="#">More details</a>

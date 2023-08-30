@@ -1,4 +1,5 @@
 <template>
+    
     <div class="backdrop" @click.self="closeModal">
         <div class="modal" :class="{ custom:theme === 'custom' }">
             <slot>Default content</slot>
@@ -7,14 +8,7 @@
             <slot name="links"></slot>
         </div>
     </div>
-    <div class="backdrop" @click.self="closeModal">
-        <div class="modalTwo" :class="{ project:theme === 'project'}">
-            <slot>Default content</slot>
-            <div class="actions">
-                <slot name="newlinks"></slot>
-            </div>
-        </div>
-    </div>
+    
 </template>
 
 <script>

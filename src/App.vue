@@ -6,25 +6,20 @@
       
       <template v-slot:links>
         <a href="#">Enrol now</a>
-        <a href="#">More details</a>
+        <a href="https://vuejs.org/guide/quick-start.html#creating-a-vue-application">More details</a>
       </template>
       <h1>Kei te pehea koe?</h1>
       <p>Kei te pai au. Kei te aha koe?</p>
 
     </Modal>
     <Modal theme="project" @close="toggleModalTwo">
-      <template v-slot:newlinks>
-        <a href="#">New</a>
-        <a href="#">Edit</a>
-        <h1>Are you applying for work?</h1>
-        <p>Check your status</p>
-      </template>
+
     </Modal>
   </div>
   <button @click.alt="toggleModal">
     Open modal (Alt)
   </button>
-  <button @click.alt="toggleModalTwo">
+  <button @click="toggleModalTwo">
     Open new modal
   </button>
 </template>

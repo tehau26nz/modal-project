@@ -12,9 +12,20 @@
       <p>Kei te pai au. Kei te aha koe?</p>
 
     </Modal>
+    <Modal theme="project" @close="toggleModalTwo">
+      <template v-slot:newlinks>
+        <a href="#">New</a>
+        <a href="#">Edit</a>
+        <h1>Are you applying for work?</h1>
+        <p>Check your status</p>
+      </template>
+    </Modal>
   </div>
   <button @click.alt="toggleModal">
     Open modal (Alt)
+  </button>
+  <button @click.alt="toggleModalTwo">
+    Open new modal
   </button>
 </template>
 
@@ -31,7 +42,7 @@ export default {
   components: {Modal},
   data(){
     return{
-      title: 'Tena koutou',
+      title: 'Tena koutou katoa',
       header: 'Sign up for Te Reo Maori',
       text: 'Ka pai!',
       // New property

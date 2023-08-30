@@ -2,7 +2,6 @@
     
     <div class="backdrop" @click.self="closeModal">
         <div class="modal" :class="{ custom:theme === 'custom' }">
-            <slot></slot>
         </div>
     </div>
     

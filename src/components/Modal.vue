@@ -4,9 +4,6 @@
         <div class="modal" :class="{ custom:theme === 'custom' }">
             <slot>Default content</slot>
         </div>
-        <div class="actions">
-            <slot name="links"></slot>
-        </div>
     </div>
     
 </template>

@@ -27,8 +27,8 @@
 
 </Modal>
   </div>
-  <button @click.alt="toggleModal">
-    Open modal (Alt)
+  <button @click="toggleModal">
+    Open modal
   </button>
   <button @click="toggleElse">
     Open else

@@ -16,7 +16,7 @@
   </div>
   <div v-if="showElse">
     
-    <Modal theme="test" @close="toggleElse">
+    <Modal @close="toggleElse">
 
       <template v-slot:links>
         <a href="#">Enrol now</a>
@@ -49,8 +49,6 @@ export default {
   data(){
     return{
       title: 'Tena koutou katoa',
-      header: 'Sign up for Te Reo Maori',
-      text: 'Ka pai!',
       // New property
       showModal: false,
       showElse: false

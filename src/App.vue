@@ -1,7 +1,7 @@
 <template>
   <h1>{{title}}</h1>
   <p>Kia ora ...</p>
-  <div v-if="showModal">
+  <teleport to="#modals" v-if="showModal">
     <Modal theme="custom" @close="toggleModal">
 
       <template v-slot:test>
@@ -13,8 +13,8 @@
       <p>Kei te pai au. Kei te aha koe?</p>
 
     </Modal>
-  </div>
-  <div v-if="showElse">
+  </teleport>
+  <teleport to="#modals" v-if="showElse">
     
     <Modal @close="toggleElse">
 
@@ -25,8 +25,9 @@
       
       <h1>No hea ia?</h1>
 
-</Modal>
-  </div>
+    </Modal>
+
+  </teleport v>
   <button @click="toggleModal">
     Open modal
   </button>
@@ -66,7 +67,7 @@ export default {
 </script>
 
 <style>
-#app {
+#app, #modals {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

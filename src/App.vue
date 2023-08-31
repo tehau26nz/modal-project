@@ -14,7 +14,7 @@
 
     </Modal>
   </div>
-  <div v-if="showModal">
+  <div v-if="showElse">
     
     <Modal theme="test" @close="toggleElse">
 
@@ -52,7 +52,8 @@ export default {
       header: 'Sign up for Te Reo Maori',
       text: 'Ka pai!',
       // New property
-      showModal: false
+      showModal: false,
+      showElse: false
     }
   },
   methods:{
@@ -60,7 +61,7 @@ export default {
       this.showModal = !this.showModal
     },
     toggleElse(){
-      this.showModal = !this.showModal
+      this.showElse = !this.showElse
     }
   }
 }

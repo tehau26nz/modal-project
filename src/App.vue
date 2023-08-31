@@ -27,7 +27,7 @@
 
     </Modal>
 
-  </teleport v>
+  </teleport>
   <button @click="toggleModal">
     Open modal
   </button>

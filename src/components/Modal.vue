@@ -3,6 +3,10 @@
     <div class="backdrop" @click.self="closeModal">
         <div class="modal" :class="{ custom:theme === 'custom' }">
             <slot></slot>
+            <div class="actions">
+                <slot name="links"></slot>
+                <slot name="test"></slot>
+            </div>
         </div>
     </div>
     

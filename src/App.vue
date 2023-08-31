@@ -8,6 +8,12 @@
         <a href="#">Enrol now</a>
         <a href="https://vuejs.org/guide/quick-start.html#creating-a-vue-application">More details</a>
       </template>
+
+      <template v-slot:test>
+        <a href="#">Look</a>
+        <a href="#">Hide</a>
+      </template>
+
       <h1>Kei te pehea koe?</h1>
       <p>Kei te pai au. Kei te aha koe?</p>
 

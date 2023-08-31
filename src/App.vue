@@ -22,6 +22,9 @@
   <button @click.alt="toggleModal">
     Open modal (Alt)
   </button>
+  <button @click="toggleElse">
+    Open else
+  </button>
 </template>
 
 <script>
@@ -65,5 +68,13 @@ h1 {
   border-bottom: 1px solid #ddd;
   display: inline-block;
   padding-block: 10px;
+}
+button {
+        color: #333;
+        padding: 8px;
+        border: 1px solid purple;
+        border-radius: 4px;
+        text-decoration: none;
+        margin: 10px;
 }
 </style>

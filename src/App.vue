@@ -3,11 +3,6 @@
   <p>Kia ora ...</p>
   <div v-if="showModal">
     <Modal theme="custom" @close="toggleModal">
-      
-      <template v-slot:links>
-        <a href="#">Enrol now</a>
-        <a href="https://vuejs.org/guide/quick-start.html#creating-a-vue-application">More details</a>
-      </template>
 
       <template v-slot:test>
         <a href="#">Look</a>
@@ -16,6 +11,16 @@
 
       <h1>Kei te pehea koe?</h1>
       <p>Kei te pai au. Kei te aha koe?</p>
+
+    </Modal>
+    <Modal theme="test" @close="toggleElse">
+
+      <template v-slot:links>
+        <a href="#">Enrol now</a>
+        <a href="https://vuejs.org/guide/quick-start.html#creating-a-vue-application">More details</a>
+      </template>
+
+      <h1>No hea ia?</h1>
 
     </Modal>
   </div>

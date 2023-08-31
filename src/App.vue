@@ -50,6 +50,9 @@ export default {
   methods:{
     toggleModal(){
       this.showModal = !this.showModal
+    },
+    toggleElse(){
+      this.showModal = !this.showModal
     }
   }
 }

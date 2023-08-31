@@ -13,16 +13,19 @@
       <p>Kei te pai au. Kei te aha koe?</p>
 
     </Modal>
+  </div>
+  <div v-if="showModal">
+    
     <Modal theme="test" @close="toggleElse">
 
       <template v-slot:links>
         <a href="#">Enrol now</a>
         <a href="https://vuejs.org/guide/quick-start.html#creating-a-vue-application">More details</a>
       </template>
-
+      
       <h1>No hea ia?</h1>
 
-    </Modal>
+</Modal>
   </div>
   <button @click.alt="toggleModal">
     Open modal (Alt)

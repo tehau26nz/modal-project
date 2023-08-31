@@ -5,8 +5,8 @@
     <Modal theme="custom" @close="toggleModal">
 
       <template v-slot:test>
-        <a href="#">Look</a>
-        <a href="#">Hide</a>
+        <a href="https://thespinoff.co.nz/atea/27-09-2021/where-to-find-heaps-of-online-te-reo-maori-resources?fbclid=IwAR1npEPU3x3qgG22zvZZtcLxlvx83thJTz9EYL2y1YNK2pL3cb3Y_BDbHBQ">Learn Māori</a>
+        <a href="#">Close</a>
       </template>
 
       <h1>Kei te pehea koe?</h1>
@@ -19,8 +19,8 @@
     <Modal @close="toggleElse">
 
       <template v-slot:links>
-        <a href="#">Enrol now</a>
-        <a href="https://vuejs.org/guide/quick-start.html#creating-a-vue-application">More details</a>
+        <a href="https://thespinoff.co.nz/atea/27-09-2021/where-to-find-heaps-of-online-te-reo-maori-resources?fbclid=IwAR1npEPU3x3qgG22zvZZtcLxlvx83thJTz9EYL2y1YNK2pL3cb3Y_BDbHBQ">Learn Māori</a>
+        <a href="#">Close</a>
       </template>
       
       <h1>No hea ia?</h1>
